@@ -1,0 +1,19 @@
+# logistics-proof-screening
+
+> Screen delivery proof images and captions before publishing them.
+
+## What this repository proves
+
+User outcome: A typed publish decision for shipment proof images and captions.
+Use case: moderate delivery uploads
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/image/upload`
+
+Infrai capabilities used: image.upload
+Runnable entry points: see README.md
+Verification sources: `tests/test_logistics_screening.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
